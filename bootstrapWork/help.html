@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "description" content = "Site about films" > <!-- мета элемент, который описывает содержимое документа -->
+    <meta name = "keywords" content = "film, watch"> <!-- мета элемент, который описывает ключевые слова в документе -->
+    <meta name = "author" content = "Petr Tolstov"> <!-- мета элемент, который указывает имя автора документа -->
+    <meta charset="UTF-8" http-equiv="refresh" content="9999" >
+    <!--<meta  http-equiv  = "content-security-policy" content = "default-src https:" > мета элемент, который разрешает загрузку ресурсов (изображения, шрифты, скрипты и так далее) только с использованием https -->
+    <meta name = "robots" content = "index, follow"> <!-- Используется поисковыми системами при индексации страниц и прохода по ссылкам поисковой системой-->
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1"> <!--Для того, чтобы мобильные браузеры автоматически не изменяли размер страниц сайта-->
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <title>AniLeague🌑</title>
+    <link rel="icon" href="src/icon.png" sizes="16x16 32х32" type="image/png">
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+
+    </style>
+</head>
+<body>
+<header class="photoHeader">
+
+
+    <form class="button">
+        <a href="index.js?a=b"><button class="btn btn-outline-light"><b>Вход</b></button></a>
+        <a href="#"><button class="btn btn-outline-light"><b>Регистрация</b></button></a>
+    </form>
+
+</header>
+<header>
+
+    <nav class="navbar navbar-expand-md navbar-dark pb-0 pt-0  navbar-inverse" style="background: #22232a">
+        <!-- Brand -->
+        <div class="container-fluid">
+
+
+            <a class="navbar-brand m-0" href="#">AniLeague🌑</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="#">Главная</a>
+                    </li>
+
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="#">Топ аниме</a>
+                    </li>
+
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="#">Случайное</a>
+                    </li>
+
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="#">Расширенный каталог</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            Помощь
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Рейтинг пользователей</a>
+                            <a class="dropdown-item" href="#">Команда</a>
+                            <a class="dropdown-item" href="#">Тех Поддержка</a>
+                            <a class="dropdown-item" href="#">FAQ</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+
+
+
+<footer>
+
+    <nav class="navbar navbar-expand-sm navbar-dark pb-0 pt-0 justify-content-center dropup" style="background: #22232A">
+
+        <!-- Links -->
+        <ul class="nav navbar-nav s">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Главная</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Каталог
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Расширенный каталог</a>
+                    <a class="dropdown-item" href="#">Топ аниме</a>
+                    <a class="dropdown-item" href="#">Случайное</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Помощь
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Рейтинг пользователей</a>
+                    <a class="dropdown-item" href="#">Команда</a>
+                    <a class="dropdown-item" href="#">Тех Поддержка</a>
+                    <a class="dropdown-item" href="#">FAQ</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</footer>
+</div>
+</body>
+<script>
+    function setMoreSpace(cardBody){
+        let headingOfAnime = cardBody.getElementsByTagName("p")[0];
+        cardBody.style.height = headingOfAnime.clientHeight + 10 +'px';
+
+
+    }
+
+    function delSpace(cardBody){
+        let headingOfAnime = cardBody.getElementsByTagName("p")[0];
+        cardBody.style.height = '30px'
+        //headingOfAnime.style.background = '#343a40';
+    }
+
+
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
